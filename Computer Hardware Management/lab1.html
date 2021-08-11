@@ -5,6 +5,7 @@
         <title>"Computer Hardware System Management"</title>
         <style>
             #DemoCanvas{border: 1px solid blue;}
+            #DemoCanvas1{border: 1px solid blue;}
             div.scrollmenu {
             background-color: #333;
             overflow: auto;
@@ -24,19 +25,66 @@
             div.column a:hover{
                 background-color: #777;
             }
+            table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+            /* Align Tabke heading to left*/            
+            th {
+                text-align: left;
+            }
+            /* Cell Padding */
+            th, td {
+                padding: 15px;
+            }
+           
          </style>
 
+            <script type="text/javascript">
+                var pattern = new Image();
+                function animate(){
+                    pattern.src= 'img1.jpg'
+                    setInterval(drawShape, 100);
+                }
+                function drawShape() {
+            
+            // get the canvas element using the DOM
+            var canvas = document.getElementById('DemoCanvas1');
+            
+            // Make sure we don't execute when canvas isn't supported
+            if (canvas.getContext) {
+            
+               // use getContext to use the canvas for drawing
+               var ctx = canvas.getContext('2d');
+               
+               ctx.fillStyle = 'rgba(0,0,0,0.4)';
+               ctx.strokeStyle = 'rgba(0,153,255,0.4)';
+               ctx.save();
+               ctx.translate(100,-25); 
+               
+               var time = new Date(); 
+               ctx.rotate( ((2*Math.PI)/6)*time.getSeconds() + ( (2*Math.PI)/6000)*time.getMilliseconds() );
+               ctx.translate(0,28.5);
+               ctx.drawImage(pattern,-3.5,-3.5);
+               ctx.restore();
+            } else {
+               alert('You need Safari or Firefox 1.5+ to see this demo.');
+            }
+         }
+
+            </script>
+       
         
     </head>
 
-    <body style="background-color: papayawhip;">
+    <body style="background-color: papayawhip;" onload = "animate();">
         <header role="banner">
             <h1> Computer Hardware Management System</h1> 
       
         </header>
     
         <canvas id="DemoCanvas" width="1260" height="60"></canvas> 
-    <script>
+    <script type="text/javascript">
         var canvas = document.getElementById("DemoCanvas");
         if (canvas.getContext) 
         {
@@ -44,6 +92,9 @@
             ctx.font = '18px sans-serif';
             ctx.fillText('Register Now To Get Started.', 10, 50); 
         }
+
+        
+
     </script>
 
     <style>
@@ -63,11 +114,34 @@
             position: relative;
             margin: 0;
         }
+       .div3{
+           padding: 5px;
+           padding-top: 79px;
+       }
+       .div4{
+            padding: 5px;
+           padding-top: 500px;
+       }
+
+       div.footer {
+            background-color: #333;
+            overflow: auto;
+            white-space: nowrap;
+            }
+            div.footer a {
+                display:contents;
+                color: white;
+                text-align: left;
+                padding: 14px;
+                text-decoration: none;
+                width: 200px;
+                }
+          
         
 .row {
   display: flex;
   padding: 50x;
-  padding-top: 100px;
+  padding-top: 10px;
   float: left;
 }
 
@@ -79,8 +153,9 @@
     </style>
 
         <div class="scrollmenu">
-            <a href="newhtml.html">HOME</a>
+            <a href="lab1.html">HOME</a>
             <a>Register</a>
+            <a href="#product">Hardware</a>
             <a href="Contact.html">Contact us</a>
         <a href="lab1About.html">About Us</a>
         </div>
@@ -88,6 +163,7 @@
         <h2> Wecome User</h2>
             <p>We provide you with a wide range of hardware devices to replace your old ones, or you can also book for a repair session.</p>
         
+        <!--Unordered List-->
         <div class="div1">
             <h3>Hardware Components</h3>
             <ul> 
@@ -96,9 +172,42 @@
                 <li>Backup Storage devices</li>
                 <li>Network Servers</li>
                 <li>Printers</li>
-            </ul> 
+            </ul>
+            
+            <!--Table-->
+            <h3>Peripherals</h3>
+            <caption>Types of Peripheral Devices</caption>
+            <table style="width:100%">
+                <tr>
+                  <th>Input Devices</th>
+                  <th>Output Devices</th>
+                </tr>
+                <tr>
+                  <td>Keyboard</td>
+                  <td>Monitor</td>
+                </tr>
+                <tr>
+                  <td>Mouse</td>
+                  <td>LCD</td>
+                </tr>
+                <tr>
+                    <td>Joystick</td>
+                    <td>Printer</td>
+                  </tr>
+                  <tr>
+                    <td>Scanner</td>
+                    <td>Plotter</td>
+                  </tr>
+                  <tr>
+                    <td>Lightpen</td>
+                  </tr>
+              </table>
+
+            <h3>Hardware
+            </h3> 
         </div>
 
+        <!--Ordered List-->
         <div class="div2">
             <h3>Wondering how to get started? Follow these steps.</h3>
             <ol>
@@ -107,28 +216,51 @@
                 <li>Get Started</li>
                 <li>Still in doubt? Contact Us</li>
             </ol>
+        <div class="div3">
+            <canvas id="DemoCanvas1" width="560" height="293"></canvas> 
         </div>
-         
+        </div>
 
-         <div class='row'>
-            <div class="column">
-                <a href="lab1Com.html"><img src="img1.jpg" alt="img1" width="300" height="200"></a>
-                <center> Personal Computers</center>
-             </div> 
-    
-             <div class="column">
-                <a> <img src="img2.jpg" alt="img2" width="300" height="200"></a>
-                <center> Peripheral</center>
-             </div> 
-             <div class="column">
-                <a><img src="img3.jpg" alt="img3" width="300" height="200"></a>
-                <center> Printers</center>
-             </div> 
-         </div>
         
-        <footer role="doc-conclusion">
-            Contact Us
-        </footer>
+        
+            <div id="product" class='row'>
+                <div class="column">
+                    <a href="lab1Com.html"><img src="img1.jpg" alt="img1" width="300" height="200"></a>
+                    <center> Personal Computers</center>
+                 </div> 
+        
+                 <div class="column">
+                    <a href="https://courses.lumenlearning.com/informationliteracy/chapter/computer-devices/"> <img src="img2.jpg" alt="img2" width="300" height="200"></a>
+                    <center> Peripheral</center>
+                 </div> 
+                 <div class="column">
+                    <a href="https://en.wikipedia.org/wiki/Printer_(computing)"><img src="img3.jpg" alt="img3" width="300" height="200"></a>
+                    <center> Printers</center>
+                 </div> 
+             </div>
+
+                <!--Image Maps-->
+                <div class="div4">
+                 
+                <img src="img.jpg" alt="Devices" usemap="#devicemap" width="1500" height="406">
+
+                <map name="devicemap">
+                <area shape="rect" coords="8,68,228,166" alt="keyboard" href="https://en.wikipedia.org/wiki/Keyboard">
+                <area shape="rect" coords="549,69,655,164" alt="Monitor" href="https://en.wikipedia.org/wiki/Computer_monitor">
+                <area shape="circle" coords="226,230,35" alt="Webcam" href="https://en.wikipedia.org/wiki/Webcam">
+                </map>
+
+                <div class="footer">
+                    <footer>
+                       <a> Contact us</a>
+                        <a><p>1800-1800</p></a>
+                        <a><p>chms@mail.in</p></a>
+                    </footer> 
+                </div>
+                </div>             
+                            
+               
     </body>
+    
 </html>
 
