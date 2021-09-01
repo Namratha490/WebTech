@@ -1,1 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Home </title>
 
+        <style>
+            div.scrollmenu {
+            background-color: rgb(46, 144, 255);
+            width: 1259px;
+            overflow: auto;
+            white-space: nowrap;
+            }
+            div.scrollmenu a {
+                display: inline-block;
+                color: white;
+                text-align: center;
+                padding: 14px;
+                text-decoration: none;
+                }
+                div.scrollmenu a:hover {
+                 background-color: #777;
+            }
+
+            table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+            /* Align Tabke heading to left*/            
+            th {
+                text-align: left;
+            }
+            /* Cell Padding */
+            th, td {
+                padding: 15px;
+            }
+
+            div.footer {
+            background-color:rgb(46, 144, 255);
+            overflow: auto;
+            white-space: nowrap;
+            }
+            div.footer a {
+                display:contents;
+                color: white;
+                text-align: left;
+                padding: 14px;
+                text-decoration: none;
+                width: 200px;
+                }
+
+        </style>
+        
+    </head>
+
+    <body>
+        <header role="banner" style="background-color: cadetblue; height: 50px; margin: 0%;">
+            <h1 style="color: darkblue;">Tourism of India</h1>
+        </header>
+
+        <div class="scrollmenu" >
+            <a href="home.html">Home</a>
+            <a href="register.html">Register</a>
+            <a href="login.html">Login</a>
+            <a href="#footer1">Contact us</a>
+            <embed type="image/jpg" src="images.png" width="70" height="30">
+        </div>
+
+        <video height="240px" width="1259px" controls autoplay muted>
+            <source src="Welcome to India ! [CINEMATIC TRAVEL FILM].mp4" type="video/mp4">
+        </video>
+
+        <h3>5 Places to visit in Karnataka</h3>
+        <Caption>Karnataka</Caption>
+        <Table style="width: 100%;">
+            <tr>
+                <th><b>Places</b></th>
+                <th><b>Visit</b></th>
+            </tr>
+            <tr>
+                <th>Gokarna</th>
+                <th>
+                    <ul>
+                        <li> Beautiful Beaches </li>
+                        <li> Trekking</li>
+                        <li> Caves</li> 
+                    </ul>
+                   </th>
+            </tr>
+            <tr>
+                <th>Kushal Nagar</th>
+                <th>
+                    <ul>
+                        <li>Buddhist Monastery</li>
+                        <li> Tibetian Eateries</li>
+                        <li>Shopping outlets</li>
+                    </ul> 
+                </th>
+            </tr>
+            <tr>
+                <th>Mysore</th>
+                <th>
+                    <ul>
+                        <li>Majestic Palace</li>
+                        <li>Bird Scantuary</li>
+                        <li>Gardens</li>
+                    </ul>
+                </th>
+            </tr>
+            <tr>
+                <th>Bandipur</th>
+                <th><ul>
+                    <li>Wildlife sighting</li>
+                    <li>Nature</li>
+                    <li>Safari</li>
+                </ul></th>
+
+            </tr>
+            <tr>
+                <th>Kabini</th>
+                <th><ul>
+                    <li>
+                        Safari
+                    </li>
+                    <li>Wildlife</li>
+                    
+                </ul></th>
+            </tr>
+        </Table>
+
+        <div>
+            <img src="imap.jpg" alt="Places" usemap="#placeemap"  height="406">
+
+            <map name="placemap">
+            <area shape="rect" coords="37,40,1031,414" alt="Kerala" href="https://en.wikipedia.org/wiki/Keyboard">
+            <area shape="rect" coords="37,462,1023,821" alt="Madhya Pradesh" href="https://en.wikipedia.org/wiki/Computer_monitor">
+            <area shape="rect" coords="47,888,1022, 1238" alt="Manipur" href="https://en.wikipedia.org/wiki/Webcam">
+            </map>
+        </div>
+
+        <div class="footer" id="footer1">
+            <footer>
+               <a> Contact us</a>
+                <a><p>1800-1800</p></a>
+                <a><p>Tourism@mail.in</p></a>
+            </footer> 
+        </div>
+    </body>
+
+</html>
