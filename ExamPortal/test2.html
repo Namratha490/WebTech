@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Audio</title>
+
+        <style>
+            div.scrollmenu {
+            background-color: #333;
+            width: 220px;
+            overflow: auto;
+            white-space: nowrap;
+            }
+            div.scrollmenu a {
+                display: inline-block;
+                color: white;
+                text-align: center;
+                padding: 14px;
+                text-decoration: none;
+                }
+                div.scrollmenu a:hover {
+                 background-color: #777;
+            }
+
+        </style>
+    </head>
+    </html>
+    <body>
+
+        <style>
+            .Button{
+                background-color: royalblue;
+                border: none;
+                border-radius: 12px;
+                width: 100px;
+                height: 30px;
+                color: white;
+
+            }
+        </style>
+
+        <div class="scrollmenu">
+            <a href="test.html">SECTION 1</a>
+            <a href="#product">SECTION 2</a>
+        </div>
+        <h2>Ecouter</h2>
+        <h3>Listen to the audio below and answer the given questions</h3>
+        <h4>A l'hotel (At the hotel)</h4>
+        <audio controls autoplay muted>
+            <source src="Situation Pratique en Français À l'hôtel.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio>
+          <br></br>
+          <p><b>Q1. A quel nom la chambre est-elle reserve?</b></p>
+          <input type="radio" id="q1" name="hotel1" value="manges">
+          <label for="hotel1"> Stephane</label><br>
+          <input type="radio" id="q1" name="hotel1" value="mange">
+          <label for="hotel1"> Bellecourt</label><br>
+          <br></br>
+
+          <p><b>Q1. Quelle chambre ont-ils?</b></p>
+          <input type="radio" id="q2" name="hotel2" value="manges">
+          <label for="hotel2"> la chambre 234</label><br>
+          <input type="radio" id="q2" name="hotel2" value="mange">
+          <label for="hotel2"> la chambre 243</label><br>
+          <br></br>
+          <p>Q3. Que voyez-vous dans cette chambre d'hotel?</p>
+          <object data="lhotel.jpg"></object>
+          <br>
+          <input type="checkbox" id="q3" name="hotel3" value="room">
+          <label for="hotel3"> Un miroir </label><br>
+          <input type="checkbox" id="q3" name="hotel3" value="room">
+          <label for="hotel3"> Un lit </label><br>
+          <input type="checkbox" id="q3" name="hotel3" value="room">
+          <label for="hotel3"> Une voiture </label><br>
+          <input type="checkbox" id="q3" name="hotel3" value="room">
+          <label for="hotel3"> Une balcoire </label><br>
+          <br></br>
+
+          
+
+            <p>Q4. Cliquez sur le bouton pour obtenir vos coordonnées d'un hôtel et sélectionnez la bonne latitude</p>
+            
+            <button onclick="getLocation()"> Cliquez </button>
+            
+            <p id="demo"></p>
+            
+            <script>
+            var x = document.getElementById("demo");
+            
+            function getLocation() {
+              if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition);
+              } else { 
+                x.innerHTML = "Geolocation is not supported by this browser.";
+              }
+            }
+            
+            function showPosition(position) {
+              x.innerHTML = "Latitude: " + position.coords.latitude + 
+              "<br>Longitude: " + position.coords.longitude;
+            }
+            </script>
+            <br>
+            <input type="radio" id="q2" name="hotel4" value="manges">
+            <label for="hotel4"> Douze . nuef sept</label><br>
+            <input type="radio" id="q2" name="hotel4" value="mange">
+            <label for="hotel4"> Quartoze . dix neuf</label><br>
+          <br></br>
+          <button class="Button" > Finish Attempt </button>
+
+
+          
+    </body>
+</html>

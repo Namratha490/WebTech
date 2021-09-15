@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Video</title>
+
+        <style>
+            div.scrollmenu {
+            background-color: #333;
+            width: 299px;
+            overflow: auto;
+            white-space: nowrap;
+            }
+            div.scrollmenu a {
+                display: inline-block;
+                color: white;
+                text-align: center;
+                padding: 14px;
+                text-decoration: none;
+                }
+                
+            
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <style>
+            .Button{
+                background-color: royalblue;
+                border: none;
+                border-radius: 12px;
+                width: 79px;
+                height: 30px;
+                color: white;
+
+            }
+        </style>
+
+<script>
+    function openWin() {
+      window.open("test2.html");
+    }
+    </script>
+
+
+        <div class="scrollmenu" >
+            <a href="test.html">SECTION 1</a>
+            <a href="test2.html">SECTION 2</a>
+            <embed type="image/jpg" src="images.png" width="70" height="30">
+        </div>
+
+        <h3>Watch the video and answer the given questions</h3>
+        <video width="420" height="240" controls autoplay poster="hotel.jpg">
+            <source src="Manger (to eat) — Present Tense (French verbs conjugated by Learn French With Alexa).mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video>
+        <h3>Find the suitable form of the verb Manger for the given sentences</h3>
+        <p><b>Q1. Je _______ du chocolat.</b></p>
+            <input type="radio" id="q1" name="Manger1" value="manges">
+            <label for="Manger1"> manges</label><br>
+            <input type="radio" id="q1" name="Manger1" value="mange">
+            <label for="Manger1"> mange</label><br>
+            <br></br>
+
+            <p><b>Q2. Marie ne _______ pas assez des legumes.</b></p>
+            <input type="radio" id="q2" name="Manger2" value="mange">
+            <label for="Manger2"> mange</label><br>
+            <input type="radio" id="q2" name="Manger2" value="mangeon">
+            <label for="Manger2"> mangeon</label><br>
+            <br></br>
+
+            <p><b>Q3. Elles ne _______ pas de viande.</b></p>
+            <input type="radio" id="q2" name="Manger3" value="mangez">
+            <label for="Manger3"> mangez</label><br>
+            <input type="radio" id="q2" name="Manger3" value="mangent">
+            <label for="Manger3"> mangent</label><br>
+            <br></br>
+
+            <button class="Button" onclick="openWin()"> Next </button>
+    </body>
+</html>
