@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="home.xsl"?>
+<login xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="login.xsd">
+
+    <heading> Log in to have fun and learn faster </heading>
+    <button > With Google </button>
+    <button > With Facebook </button>
+
+    <textfield> Username or email</textfield>
+    <textfield> password </textfield>
+    <button > Login </button>
+    <link> Don't have an Account? Sign up now </link>
+
+
+    <footer>
+        <component > About us </component>
+         <component> Jobs </component>
+          <component> Terms of use </component>
+     </footer>
+</login>

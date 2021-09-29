@@ -1,0 +1,13 @@
+<!ELEMENT home (heading,navigation, dropdown, button, footer)>
+<!ELEMENT heading (#PCDATA)>
+<!ELEMENT navigation (category*)>
+<!ELEMENT category (#PCDATA)>
+<!ELEMENT dropdown (option*)>
+<!ELEMENT option (#PCDATA)>
+<!ELEMENT button (#PCDATA)>
+<!ELEMENT footer (icon*)>
+<!ELEMENT icon (#PCDATA)>
+
+<!ATTLIST category link CDATA #REQUIRED>
+<!ATTLIST button link CDATA #REQUIRED>
+<!ATTLIST icon link CDATA #REQUIRED>

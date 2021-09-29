@@ -1,1 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="home.xsl"?>
+<!DOCTYPE home SYSTEM "home.dtd">
 
+<home>
+ <heading> Learn a Language</heading>
+<navigation>
+     <category link="path of the page"> Log in ></category>
+	 <category link="path of the page"> Start Learning ></category>
+	 
+</navigation>
+
+
+<dropdown>
+    <option> Hindi </option>
+    <option>French</option>
+    <option> Spanish</option>
+</dropdown>
+<button link="login.xml" > Get Started </button>
+
+<footer>
+<icon  link="facebook.com" > facebook </icon>
+<icon  link="instagram.com"> instagram </icon>
+<icon  link="twitter.com"> twitter</icon>
+
+ </footer>
+ 
+</home>
