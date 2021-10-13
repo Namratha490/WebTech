@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CHRIST>
+    <CS>
+    <STU-NAME>Name</STU-NAME>
+    <STU-BRANCH>Branch</STU-BRANCH>
+    <STU-COLLEGE>University/College</STU-COLLEGE>
+    <STU-EMAIL>Email</STU-EMAIL>
+    </CS>
+</CHRIST>
